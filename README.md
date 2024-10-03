@@ -23,7 +23,7 @@ services:
 ```
 
 ## Example usage using FILES
-```
+```yaml
 ---
 services:
   webhook-runner:
