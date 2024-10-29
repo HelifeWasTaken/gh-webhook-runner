@@ -8,6 +8,7 @@ from flask import abort, request
 
 
 class Webhook(object):
+
     """
     Construct a webhook on the given :code:`app`.
 
@@ -87,8 +88,7 @@ class Webhook(object):
         for hook in self._hooks.get(event_type, []):
             hook(data)
 
-        return "", 204
-
+            return "", 204
 
 def _get_header(key):
     """Return message header"""
